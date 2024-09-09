@@ -1,0 +1,139 @@
+.navbar{
+    padding: 20px 0;
+    display: flex;
+    
+    align-items: center;
+    width: 80%;
+    margin-left: 100px;
+}
+.navbar-menu{
+  display: flex; 
+  list-style: none; 
+  gap: 20px;
+  color:#49557e;
+  font-size: 18px;
+}
+
+.navbar ul{
+   margin-left: 400px;
+}
+.navbar-menu a{
+    padding:0px 0px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    color:#49557e
+    }
+
+.navbar .logo{
+    width: 150px;
+    margin-left:100px;
+    position: absolute;
+}
+ul .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    cursor: pointer;
+    
+}
+.navbar button{
+    background-color: transparent;
+    font-size:16px;
+    color:#49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover{
+ background-color:#fff4f2;
+}
+.icon{
+    position: relative;
+}
+.dot{
+    position: absolute;
+    min-width:8px;
+    min-height: 8px;
+    background-color: tomato;
+    border-radius: 5px;
+    margin-top: -30px;
+    margin-left: 25px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .navbar-right img{
+       width:20px
+    }
+    .navbar ul{
+        margin-left: 280px;
+        
+     }
+    .navbar a{
+        font-size: 18px;
+    }
+    .navbar button{
+        font-size:12px;
+        padding: 8px 20px;
+    }
+   #logo{
+    width: 120px;
+   }
+  }
+  @media only screen and (max-width: 1200px) {
+    .navbar-right img{
+       width:18px
+    }
+    .navbar ul{
+        margin-left: 180px;
+        
+     }
+    .navbar a{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .navbar button{
+        font-size:12px;
+        padding: 8px 15px;
+    }
+   #logo{
+    width: 95px;
+   }
+   .navbar{
+    margin-left: 20px;
+   }
+   .navbar-right{
+    gap: 15px;
+   }
+   .navbar-menu{
+    gap: 0px;
+   }
+  }
+  @media only screen and (max-width: 900px) {
+    .navbar ul{
+        display: none;
+    }
+    .navbar-right{
+        margin-left: 400px;
+        gap: 15px;
+       }
+  }
+  @media only screen and (max-width: 700px) {
+   
+    .navbar ul{
+        display: none;
+    }
+    .navbar-right{
+        margin-left: 220px;
+        gap: 10px;
+       }
+  }
+ 
